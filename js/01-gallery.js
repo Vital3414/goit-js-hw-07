@@ -10,6 +10,8 @@ galleryRef.insertAdjacentHTML(
     createGalleryMarkupFromArray(galleryItems)
 );
 
+galleryRef.addEventListener("click", onGalleryItemClick);
+
 function createGalleryMarkupFromArray(itemArray) {
     return itemArray.map((item) => {
         return `
